@@ -110,11 +110,11 @@ export class ConverterComponent implements OnInit {
         }
     }
 
-    selectCurrencyByEnter(event: MatOptionSelectionChange, inputName: string): void {
-        if (event.isUserInput) {
-            inputName = event.source.value;
-        }
-    }
+    // selectCurrencyByEnter(event: MatOptionSelectionChange, inputName: string): void {
+    //     if (event.isUserInput) {
+    //         inputName = event.source.value;
+    //     }
+    // }
 
     selectCurrencyByClick(selectedOption: string, formControlName: string) {
         this.converterForm.controls[formControlName].setValue(selectedOption);
